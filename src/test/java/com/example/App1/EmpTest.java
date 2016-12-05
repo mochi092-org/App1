@@ -6,6 +6,8 @@ public class EmpTest extends TestCase {
 
 	   public void testEmp()
 	    {
+
+		   // hoge
 	        assertTrue( true );
 	    }
 }
