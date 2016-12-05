@@ -4,7 +4,7 @@ node {
 
 
       // MultiBranch Pipeline/GitHub Organizationの場合
-	 /checkout scm
+	 checkout scm
 
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
