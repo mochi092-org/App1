@@ -13,7 +13,7 @@ node {
    }
    stage('Build') {
 
-      bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-
+     // bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+     sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package
    }
 }
