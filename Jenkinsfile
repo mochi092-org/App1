@@ -1,10 +1,10 @@
 node {
    def mvnHome
    stage('Preparation') { // for display purposes
-      // Get some code from a GitHub repository
-      //git 'https://github.com/mochi092-org/App1.git'
 
-	  checkout scm
+
+      // MultiBranch Pipeline/GitHub Organizationの場合
+	 /checkout scm
 
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
@@ -13,7 +13,6 @@ node {
    }
    stage('Build') {
 
-     // bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-     sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package
+	  sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
    }
 }
