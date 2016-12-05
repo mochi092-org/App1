@@ -6,7 +6,7 @@ public class DevTest extends TestCase {
 
 	   public void testEmp()
 	    {
-	        assertFalse(true);;
+	        assertTrue( false );
 	    }
 
 }
